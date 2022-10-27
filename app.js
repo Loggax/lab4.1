@@ -11,7 +11,7 @@ app.options('*', cors());
 
 app.get('/', (req, res) => {
 	res.setHeader('Content-Type', 'text/html');
-	res.send('<h1 align="center">Hello world</h1>');
+	res.send('<h1 align="center">Hello world!</h1>');
 });
 
 app.listen(port);
