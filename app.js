@@ -9,15 +9,9 @@ app.use(express.json());
 app.use(cors());
 app.options('*', cors());
 
-app.use((req, res, next) => {
-	res.setHeader('Content-Type', 'application/json');
-
-	next();
-});
-
 app.get('/', (req, res) => {
 	res.setHeader('Content-Type', 'text/html');
-	res.send('<h1 align="center">Hello</h1>');
+	res.send('<h1 align="center">Hello world</h1>');
 });
 
 app.listen(port);
